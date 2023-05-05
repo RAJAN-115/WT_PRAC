@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    header {
+        background-color:   #F4C430;
+        color: #fff;
+        padding: 10px;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    table th, table td {
+        padding: 10px;
+        text-align: left;
+    }
+    
+    table th {
+        background-color:  #F4C430;
+        color: #fff;
+    }
+    
+    section {
+        margin-bottom: 50px;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    form input, form textarea {
+        display: block;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%;
+    }
+    
+    form input[type="submit"] {
+        background-color:  #F4C430;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+    </style>
+	
+</head>
+<body>
+	<header>
+		<h1>Welcome to our Restaurant</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h2>Our Menu</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Description</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Steak</td>
+						<td>A juicy steak cooked to perfection</td>
+						<td>$25.99</td>
+					</tr>
+					<tr>
+						<td>Salmon</td>
+						<td>Fresh salmon served with a side of vegetables</td>
+						<td>$18.99</td>
+					</tr>
+					<tr>
+						<td>Chicken Alfredo</td>
+						<td>Delicious chicken alfredo with homemade pasta</td>
+						<td>$15.99</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+        <p style="font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 1.5; color: #333; text-align: justify;">At our restaurant, we pride ourselves on using only the freshest, locally-sourced ingredients to create our dishes. Our menu is carefully crafted to showcase the flavors of the season, and our chefs are dedicated to creating meals that are both delicious and nutritious. Whether you're in the mood for a hearty entrée or a light appetizer, we have something for everyone. Come visit us today and experience the taste of our farm-to-table cuisine!</p>
+
+
+		<section>
+			<h2>About Us</h2>
+			<p>We are a family-owned restaurant that has been serving delicious food for over 20 years. Our menu is full of tasty options that are sure to please any palate.</p>
+			<img src="https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/60107ff04702bdac3d216459_6002086f72b727845f01e48b_la-barraca.jpeg" alt="Restaurant Interior">
+		</section>
+
+		<section>
+			<h2>Contact Us</h2>
+			<form action="submit-form.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Restaurant Name. All rights reserved.</p>
+	</footer>
+</body>
+</html>
